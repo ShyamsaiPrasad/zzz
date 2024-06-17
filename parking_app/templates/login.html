@@ -22,21 +22,28 @@
     .navbar-brand {
       font-size: 1.25rem; /* Adjusted font size for responsiveness */
       /* white-space: nowrap; Prevent text wrapping */
-      white-space: normal;
-      overflow-wrap: anywhere;
+      /* white-space: normal;
+      overflow-wrap: anywhere; */
 	  display: flex;
       align-items: center;
       color: white;
     }
-	.navbar-brand div {
+	/* .navbar-brand div {
             white-space: nowrap;
-    }
+    } */
     .navbar-brand .text-primary {
-            margin-right: 0.5rem;
+            margin-right: 0.2rem;
     }
     .navbar-brand .title {
+            display: flex;
+            flex-wrap: wrap;
             white-space: normal;
             overflow-wrap: break-word;
+    }
+    .navbar-brand .title div:first-child {
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
     }
   </style>
 </head>
