@@ -19,21 +19,19 @@
     .hr {
       font-weight: 10px;
     }
+    .navbar-brand {
+      font-size: 1.25rem; /* Adjusted font size for responsiveness */
+      white-space: nowrap; /* Prevent text wrapping */
+    }
   </style>
 </head>
 <body class="bg-black">
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand mb-0 h1" href="#" style="color: white;">
+      <span class="navbar-brand mb-0 h1" style="color: white;">
         <span class="text-primary"><i class="bi bi-car-front-fill"></i> S</span>imple Parking Management System
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <!-- Add your navigation links here if needed -->
-      </div>
+      </span>
     </div>
   </nav>
   <div class="container">
@@ -62,4 +60,5 @@
   </div>
 </body>
 </html>
+
 {% endblock %}
